@@ -2,8 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Contact from "./contact";
 import dogs from "./dogs";
 
-//const apiURL = 'https://api.jsonbin.io/v3/b/66ea6857e41b4d34e4325758';
-
 
 
 const Welcome = ({ onShowDogs }) => {
