@@ -13,7 +13,7 @@ function App() {
   const [dogData, setDogData] = useState([]);
 
   const fetchDogs = () => {
-    fetch('https://api.jsonbin.io/v3/b/66ea6857e41b4d34e4325758')
+    fetch('https://api.jsonbin.io/v3/b/66f3d48dacd3cb34a88b303f')
       .then(response => response.json())
       .then(data => setDogData(data.record))
       .catch(error => console.error('Error fetching dog data:', error));
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome onShowDogs={fetchDogs} />} />
         <Route path="/dogs" element={<Dogs dogData={dogData} />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="/dogs/:id" element={<DogInfo dogData={dogData} />} />
       </Routes>
     </Router>
