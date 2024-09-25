@@ -45,11 +45,11 @@ const Dogs = ({ dogData }) => {
       )}
       
       {/* Pagination Controls */}
-      <div>
+      <div className="pagination-controls">
         <button onClick={prevPage} disabled={currentPage === 1}>
           Previous
         </button>
-        <span> Page {currentPage} of {Math.ceil(dogData.length / dogsPerPage)} </span>
+        <span className="pagination-text"> Page {currentPage} of {Math.ceil(dogData.length / dogsPerPage)} </span>
         <button onClick={nextPage} disabled={currentPage === Math.ceil(dogData.length / dogsPerPage)}>
           Next
         </button>
