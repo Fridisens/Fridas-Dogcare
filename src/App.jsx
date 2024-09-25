@@ -21,12 +21,12 @@ function App() {
 
   
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Welcome onShowDogs={fetchDogs} />} />
-        <Route path="/dogs" element={<Dogs dogData={dogData} />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/dogs/:id" element={<DogInfo dogData={dogData} />} />
+    <Router basename="Fridas-Dogcare">
+      <Routes> 
+        <Route path="" element={<Welcome onShowDogs={fetchDogs} />} />
+        <Route path="dogs" element={<Dogs dogData={dogData} />} />
+        <Route path="contact" element={<Contact/>} />
+        <Route path="dogs/:id" element={<DogInfo dogData={dogData} />} />
       </Routes>
     </Router>
   );

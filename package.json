@@ -1,18 +1,19 @@
 {
   "name": "doggy_dogcare-react",
   "private": true,
-  "homepage":"https://Fridisens.github.io/Fridas-Dogcare",
+  "homepage": "https://Fridisens.github.io/Fridas-Dogcare",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
