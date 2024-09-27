@@ -100,7 +100,7 @@ button:focus-visible {
 .dogs-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
-  gap: 20px; /*avstånd mellan kort*/
+  gap: 20px;
   padding: 20px;
 }
 
