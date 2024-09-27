@@ -15,7 +15,7 @@ const DogInfo = ({ dogData }) => {
             <img src={dog.img} alt={dog.name} className="dog-info-image" />
             <div className="dog-info-details">
             <p>Breed: {dog.breed} </p>
-            <p>Present: {dog.present ? 'At our Dogcare': 'Not here right now'} </p>
+            <p>Present: {dog.present ? ' At our Dogcare':' Not here right now'} </p>
             <p>chipNumer: {dog.chipNumber} </p>
             <p>Owner: {dog.owner.name} </p>
             <p>Phonenumber: {dog.owner.phoneNumber} </p>

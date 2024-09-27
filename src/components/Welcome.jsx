@@ -20,8 +20,10 @@ const Welcome = ({ onShowDogs }) => {
     return (
       <section>
         <h1>WELCOME TO FRIDAS DOG CARE</h1>
+        <div className="button-container">
         <button onClick={handleShowDogs}>SEE OUR DOGS</button>
         <button onClick={handleShowContact}>CONTACT</button>
+        </div>
       </section>
     );
   };
