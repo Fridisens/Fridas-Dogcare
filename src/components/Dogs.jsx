@@ -36,7 +36,6 @@ const Dogs = ({ dogData }) => {
             <div key={dog.name} className="dog-card">
               <h3>{dog.name}</h3>
               <img src={dog.img} alt={dog.name} className="dog-image" />
-              <p>Present: {dog.present ? ' Here':' Not here'} </p>
               <Link to={`/dogs/${dog.name}`}>More Info</Link>
             </div>
           ))}
